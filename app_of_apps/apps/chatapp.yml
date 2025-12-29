@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/AKASH1729/django-app.git # Repo containing child apps(that you have forked and cloned earlier)
+    repoURL: https://github.com/AKASH1729/argocd.git # Repo containing child apps(that you have forked and cloned earlier)
     targetRevision: main
-    path:  kubernetes # path of Online Shop app in `argocd-demos` repo
+    path:  applicationsets/chat-app # path of Online Shop app in `argocd-demos` repo
   destination:
     server: <cluster-ip> # Replace with your Cluster Url, To get run: `argocd cluster list`
     namespace: default
