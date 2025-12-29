@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/AKASH1729/django-app.git
+    repoURL: https://github.com/AKASH1729/full-stack_chatApp.git
     targetRevision: main
     path: kubernetes
 
