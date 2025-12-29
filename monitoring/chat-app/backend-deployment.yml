@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chatapp-backend
+  namespace: chat-app
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      name: backend-pod
+      namespace: chat-app
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: chat-backend
+        image: akas11729/chatapp-backend:latest
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 5001
+        env:
+        - name: NODE_ENV
+          value: production
+        - name: MONGODB_URI
+          value: mongodb://root:admin@mongo:27017/chatApp?authSource=admin&retryWrites=true&w=majority
+        - name: JWT_SECRET
+          value: McneRTC30f2fNw/GOzm8IA==
+        - name: PORT
+          value: "5001"
