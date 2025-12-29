@@ -7,12 +7,12 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/AKASH1729/full-stack_chatApp.git
+    repoURL: https://github.com/AKASH1729/argocd.git
     targetRevision: main
-    path: kubernetes
+    path: applicationsets/chat-app
 
   destination:
-    server: https://kubernetes.default.svc
+    server: https://172.31.84.81:33893  
     namespace: default
 
   syncPolicy:
