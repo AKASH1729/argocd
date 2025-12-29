@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Amitabh-DevOps/argocd-demos.git # Repo containing child apps(that you have forked and cloned earlier)
+    repoURL: https://github.com/AKASH1729/argocd.git # Repo containing child apps(that you have forked and cloned earlier)
     targetRevision: main
     path: ui_approach/nginx      # path of Nginx app in `argocd-demos` repo
   destination:
