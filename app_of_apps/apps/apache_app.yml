@@ -13,7 +13,7 @@ spec:
 
   destination:
     server: https://172.31.84.81:33893  
-    namespace: argocd
+    namespace: default
 
   syncPolicy:
     automated:
