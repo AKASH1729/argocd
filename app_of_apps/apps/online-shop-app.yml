@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/AKASH1729/argocd.git
     targetRevision: main
-    path: image_updater/online-shop
+    path: monitoring/online-shop
 
   destination:
     server: https://172.31.84.81:33893  
