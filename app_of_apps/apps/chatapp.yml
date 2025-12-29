@@ -8,9 +8,9 @@ spec:
   source:
     repoURL: https://github.com/AKASH1729/django-app.git # Repo containing child apps(that you have forked and cloned earlier)
     targetRevision: main
-    path:  applicationsets/chat-app # path of Online Shop app in `argocd-demos` repo
+    path:  kubernetes # path of Online Shop app in `argocd-demos` repo
   destination:
-    server: https://172.31.19.178:33893 # Replace with your Cluster Url, To get run: `argocd cluster list`
+    server: <cluster-ip> # Replace with your Cluster Url, To get run: `argocd cluster list`
     namespace: default
   syncPolicy:
     automated:
