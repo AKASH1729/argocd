@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/AKASH1729/argocd.git # Repo containing child apps(that you have forked and cloned earlier)
+    repoURL: https://github.com/AKASH1729/django-app.git # Repo containing child apps(that you have forked and cloned earlier)
     targetRevision: main
     path:  applicationsets/chat-app # path of Online Shop app in `argocd-demos` repo
   destination:
